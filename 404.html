@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <script>
+        const currentPath = window.location.pathname; // Get current path
+        const newUrl = '/#' + currentPath; // Use hash routing to keep whatever after the # at lcient side
+        window.location.href = newUrl; // Get a new url so site dont die
+    </script>
+</body>
+</html>
