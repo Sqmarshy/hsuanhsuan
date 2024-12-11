@@ -3,16 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
+    <title>Cute Kitten Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fef5e7;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .text {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .text a {
+            text-decoration: none;
+            color: #6a0dad;
+            font-weight: bold;
+        }
+
+        .text a:hover {
+            text-decoration: underline;
+        }
+
+        .kitten-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .kitten {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            top: 90px; /* Adjust vertical position of the kitten */
+            left: -50px; /* Center horizontally */
+            transform: translateX(-50%) rotate(-20deg); /* Adjust rotation to point at the link */
+        }
+        .kitten2 {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            top: 90px; /* Adjust vertical position of the kitten */
+            left: 50px; /* Center horizontally */
+            transform: translateX(-50%) rotate(20deg); /* Adjust rotation to point at the link */
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        p:first-of-type {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
-    <script>
-        <alert>Redirecting to homepage</alert>
-        // Redirect to the main index.html with the correct route
-        // const currentPath = window.location.pathname;
-        // const newUrl = '/#' + currentPath;
-        const temp = 'sqmarshy.github.io/deploy-test/'
-        window.location.href = temp;
-    </script>
+    <div class="kitten-container">
+        <img class="kitten" src="assets/kitten_points.png" alt="Cute Kitten">
+        <img class="kitten2" src="assets/kitten_points_flip.png" alt="Cute Kitten">
+        <div class="pointer"></div>
+    </div>
+    <p>Oops you spotted a routing bug that I did not</p>
+    <p>Let the kitty bring you back to the page</p>
+    <p class="text"><a href="https://sqmarshy.github.io/deploy-test/">Here</a></p>
 </body>
 </html>
